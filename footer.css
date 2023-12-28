@@ -1,0 +1,22 @@
+.container1 {
+    background-color: darkgray;
+}
+
+.border-top {
+    border-width: 3px;
+    border-color: #e5e5e5;
+}
+
+/* Make links inside the footer brighter for better visibility */
+footer a {
+    color: #ffffff; /* A brighter white color */
+    text-decoration: none; 
+}
+
+footer a:hover {
+    color: #e5e5e5;  /* A slightly off-white color for hover effect */
+}
+
+#copyright {
+    border-top: 5px solid black;
+}

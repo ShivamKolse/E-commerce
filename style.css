@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Google fonts */
+body{
+    overflow-x: hidden;
+}
+.home {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+}
+
+/* header section start */
+
+/* logo properties */
+.navbar-brand {
+    font-size: 30px;
+    color: rgb(201, 197, 4);
+}
+
+/* search section properties */
+.search {
+    width: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-input {
+    border-radius: 0px 0px 0px 15px;
+}
+
+.search-btn {
+    background-color: rgb(201, 197, 4);
+    border-radius: 0px 15px 0px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* login button properties */
+.login-btn {
+    color: black;
+    background-color: rgb(201, 197, 4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+/* cart button properties */
+.cart-btn {
+    color: rgb(201, 197, 4);
+    font-size: 25px;
+}
+
+/* menu bar properties */
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.menu-bar li a {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* hover properties */
+.search-btn:hover,
+.login-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.cart-btn:hover {
+    color: white;
+}
+
+.menu-bar li a:hover {
+    background-color: rgb(215, 236, 236);
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+}
+
+/* media query properties */
+@media screen and (max-width: 768px) {
+    .search-div {
+        display: block !important;
+        margin-left: 10px;
+        margin-bottom: 7px;
+    }
+
+    .search {
+        width: 300px;
+    }
+
+    .navbar-brand,
+    .login-btn,
+    .cart-btn {
+        margin-left: 20px;
+    }
+
+    .cart-btn {
+        margin-top: -10px;
+    }
+
+}
+/* header section end */
+
+/* home section start */
+.slogan {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden; /* This will ensure that the blur doesn't overflow outside the .slogan div */
+}
+
+.slogan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(images/homeloganbg.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(2px); /* This will blur only the background image */
+    z-index: -1; /* Place it behind the content inside .slogan */
+}
+
+.title {
+    position: relative; /* Ensure the content stays on top */
+    z-index: 1; /* Keep it above the blurred background */
+    text-align: center; /* Center-align the text */
+    color: yellow;
+    font-family: 'Roboto Mono';
+    top: 40%;
+}
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+#featurehome{
+    position: relative;
+    text-align: center;
+    font-family:'source code pro' ;
+}
+
+    /* Adjust the size of the carousel control buttons */
+.carousel-control-prev, .carousel-control-next {
+    font-size: 1rem; /* Adjust the font size */
+    padding: 0.5rem 1rem; /* Adjust padding for top/bottom and left/right */
+    width: auto; /* Set width to auto */
+     height: auto; /* Set height to auto */
+}
+    
+    /* Adjust the size of the icons inside the carousel control buttons if needed */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 20px; /* Adjust width */
+    height: 20px; /* Adjust height */
+}
+/*home section end*/
+
+
+
+
+
